@@ -1,0 +1,19 @@
+{
+  "name": "generic-middleware-utils",
+  "version": "1.0.0",
+  "description": "Utility functions to generate middleware functions for http-interfaces",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/vsnikkil/generic-middleware-utils.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vsnikkil/generic-middleware-utils/issues"
+  },
+  "homepage": "https://github.com/vsnikkil/generic-middleware-utils#readme"
+}
