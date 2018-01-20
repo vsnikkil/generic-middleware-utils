@@ -4,7 +4,10 @@
   "description": "Utility functions to generate middleware functions for http-interfaces",
   "main": "webpack.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run build:lib && npm run build:test",
+    "build:lib": "babel -d build/dist/ src/lib",
+    "build:test": "babel -d build/test/ src/test/",
+    "watch": "babel --watch -d build/ src/"
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,13 @@
   "bugs": {
     "url": "https://github.com/vsnikkil/generic-middleware-utils/issues"
   },
-  "homepage": "https://github.com/vsnikkil/generic-middleware-utils#readme"
+  "homepage": "https://github.com/vsnikkil/generic-middleware-utils#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "koa": "^2.4.1",
+    "koa-router": "^7.3.0"
+  }
 }
